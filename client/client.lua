@@ -6,7 +6,7 @@ local Goons = {}
 
 Citizen.CreateThread(function()
 	while ESX == nil do
-		TriggerEvent('esx:SupremeObject', function(obj) ESX = obj end)
+		TriggerEvent('esx:getShareoObject', function(obj) ESX = obj end)
 		Citizen.Wait(0)
 	end
 
